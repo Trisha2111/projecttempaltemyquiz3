@@ -35,15 +35,15 @@ class Quiz {
     text("----------------------------",320, 65);
     Contestant.getPlayerInfo();
     //Write a condition,data is not equal to undefined.
-    if(  ){
+    if( allContestants!==undefined ){
       debugger;
       var display_Answers = 230;
       fill("Blue");
       textSize(20);
       //add a Note to help contestants understand the result.
-      text("",130,230);
+      text("the contestants who give the write answer it will highlited in green color",130,230);
      // Write a for loop statement and check the condition if the correct answer is equal to the contestant’s answer. 
-      for(){
+      for(var plr in allContestants){
         debugger;
         var correctAns = "2";
         if (correctAns === allContestants[plr].answer)
